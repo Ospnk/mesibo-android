@@ -1,4 +1,4 @@
-package com.mesibo.firstapp
+package com.mesibo.firstappira
 
 import com.mesibo.messaging.MesiboUIListener
 import com.mesibo.messaging.MesiboUI.MesiboScreen
@@ -7,7 +7,7 @@ import com.mesibo.messaging.MesiboUI.MesiboMessageScreen
 import com.mesibo.messaging.MesiboUI.MesiboRow
 import com.mesibo.messaging.MesiboRecycleViewHolder
 import com.mesibo.api.MesiboProfile
-import com.mesibo.firstapp.R
+import com.mesibo.firstappira.R
 import com.mesibo.messaging.MesiboUI
 import android.app.Activity
 import android.content.Context
