@@ -388,44 +388,27 @@ class MainActivity : AppCompatActivity(), ConnectionListener,
 
 
     override fun MesiboCall_OnIncoming(
-        profile: MesiboProfile,
+        profile: MesiboProfile?,
         video: Boolean,
         waiting: Boolean
-    ): CallProperties? {
-        // In this example, we use video as a filter to accept video calls only
-        if (!video) return null //Accept video calls only
-
-
-        if (profile.address == null || profile.address.isEmpty()) return null
-
-
-
-
-
+    ): MesiboCall.CallProperties? {
         // Define call properties
         val cp = MesiboCall.getInstance().createCallProperties(true)
-
-
         // Define optional parameters
         cp.video.enabled = true
-        cp.video.bitrate = 2000 //bitrate in kbps
-
         return cp
     }
-
     override fun MesiboCall_OnShowUserInterface(
         p0: MesiboCall.Call?,
         p1: MesiboCall.CallProperties?
     ): Boolean {
         return false;
     }
-
     override fun MesiboCall_OnError(p0: MesiboCall.CallProperties?, p1: Int) {
-log ("error happened");
+        log ("MesiboCall_OnError");
     }
-
     override fun MesiboCall_onNotify(p0: Int, p1: MesiboProfile?, p2: Boolean): Boolean {
-        log ("call happened");
+        log ("MesiboCall_onNotify");
         return true;
     }
 
