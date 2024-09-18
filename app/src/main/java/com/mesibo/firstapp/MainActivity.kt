@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity(), ConnectionListener,
         api.init(applicationContext)
         Mesibo.addListener(this)
         Mesibo.setAccessToken(user.token)
-
+        MesiboCall.getInstance().setListener(this)
         Mesibo.start()
         mRemoteUser = remoteUser
         mProfile = Mesibo.getProfile(remoteUser.address)

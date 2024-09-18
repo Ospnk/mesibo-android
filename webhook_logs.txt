@@ -1,0 +1,47 @@
+{
+  "id": 0,
+  "v": 1,
+  "server": "mesibo",
+  "aid": 322056,
+  "ts": 1726587309185,
+  "events": [
+    {
+      "type": "call",
+      "to": {
+        "uid": 6691578,
+        "address": "onee_user1@example.com"
+      },
+      "from": {
+        "uid": 6691581,
+        "address": "test ira2 "
+      },
+      "id": 1235857062,
+      "ts": 1726587309,
+      "status": "cancel"
+    }
+  ]
+}
+
+{
+  "id": 0,
+  "v": 1,
+  "server": "mesibo",
+  "aid": 322056,
+  "ts": 1726587297162,
+  "events": [
+    {
+      "type": "video",
+      "to": {
+        "uid": 6691578,
+        "address": "onee_user1@example.com"
+      },
+      "from": {
+        "uid": 6691581,
+        "address": "test ira2 "
+      },
+      "id": 1235857062,
+      "ts": 1726587297,
+      "status": "setup"
+    }
+  ]
+}
